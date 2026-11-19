@@ -74,7 +74,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (saved) {
             try {
                 const hobbiesData = JSON.parse(saved);
-                hobbiesContainer.innerHTML = ''; 
+                const items = hobbiesContainer.querySelectorAll('.hobby-item');
+                items.forEach(item => {
+                    if (!item.querySelector('img')) {
+                        item.remove(); 
+                    }
+                });
                 hobbiesData.forEach(data => {
                     hobbiesContainer.appendChild(createHobbyElement(data.title, data.description));
                 });
