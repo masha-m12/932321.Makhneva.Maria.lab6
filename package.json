@@ -1,0 +1,24 @@
+{
+  "name": "932321.makhneva.maria.lab6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masha-m12/932321.Makhneva.Maria.lab6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/masha-m12/932321.Makhneva.Maria.lab6/issues"
+  },
+  "homepage": "https://github.com/masha-m12/932321.Makhneva.Maria.lab6#readme",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
