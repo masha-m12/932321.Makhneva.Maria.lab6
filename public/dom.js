@@ -61,9 +61,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const hobbiesData = [];
         
         items.forEach(item => {
-            const title = item.querySelector('h3').textContent;
-            const description = item.querySelector('p').textContent;
-            hobbiesData.push({ title: title, description: description });
+            if (!item.querySelector('img')) {
+                const title = item.querySelector('h3').textContent;
+                const description = item.querySelector('p').textContent;
+                hobbiesData.push({ title: title, description: description });
+            }
         });
         
         localStorage.setItem(STORAGE_HOBBIES, JSON.stringify(hobbiesData));
